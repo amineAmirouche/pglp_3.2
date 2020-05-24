@@ -5,8 +5,8 @@ public class Vendeur extends Employee {
 	  
 	  /**
 	   * Constructeur du vendeur. 
-	   * @param anc : les années d'experiences
-	   * @param com : la commision du vendeur
+	   * @param exp : les années d'experiences
+	   * @param com : la prime du vendeur
 	   */
 	  public  Vendeur(int exp,int com) {
 	    if (com < 0 || exp < 0) {
@@ -17,7 +17,7 @@ public class Vendeur extends Employee {
 	  }
 	  
 	  /**
-	   * Calcul du salaire de base d'un employee et ajout de la commision.
+	   * Calcul du salaire de base d'un employee et ajout de la prime
 	   */ 
 	  public int calculSalaire() {
 	    return super.calculSalaire() + prime;
